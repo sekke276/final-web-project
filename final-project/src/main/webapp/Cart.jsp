@@ -104,7 +104,7 @@
 						<h2 class="title">Payment Information</h2>
 					</div>
 					<div class="payment-container">
-						<div class="user-container">
+						<div class="user-cart-container">
 							<input type="hidden" value="${sessionScope.user.getId()}" id="user-id" />
 							<div class="user-line">
 								<div class="input-name">First Name</div>
