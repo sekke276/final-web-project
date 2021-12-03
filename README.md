@@ -6,7 +6,6 @@ A tree-selling webapp for school's e-commerce final project.
 
 - Java
 - CSS
-- HTML
 - Javascript
 
 ## Feature
