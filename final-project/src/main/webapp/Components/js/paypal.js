@@ -20,7 +20,13 @@ function initPayPalButton() {
       // Finalize the transaction after payer approval
       onApprove: function (_, actions) {
         return actions.order.capture().then(function () {
-          window.location.href = "../../thanks.jsp";
+          let submitUrl = "paypalajax";
+
+          $.post(submitUrl, {
+            userId: $("#user-id").val(),
+          });
+
+          window.location.href = "/thanks.jsp";
         });
       },
     })

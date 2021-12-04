@@ -1,9 +1,8 @@
 <%@page import="java.net.URLEncoder"%>
 <%@page import="java.nio.charset.StandardCharsets"%>
-<%@page import="com.vnpay.Config"%>
+<%@page import="com.Controller.Config"%>
 <%@page import="com.cart.Cart"%>
 <%@page import="com.cart.CartDAO"%>
-<%@page import="com.user.User"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 
