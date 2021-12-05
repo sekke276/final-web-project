@@ -4,7 +4,7 @@ import javax.servlet.*;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.*;
 
-
+import com.data.hiddenData;
 import com.user.*;
 
 @WebServlet(urlPatterns = "/register")
@@ -42,6 +42,7 @@ public class registerServlet extends HttpServlet {
                     System.out.println(UserDAO.emailExists(user.getEmail()));
                     UserDAO.addUser(user);
                     message ="login";
+
                 }
             }
             else

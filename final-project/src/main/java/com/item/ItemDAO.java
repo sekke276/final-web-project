@@ -196,4 +196,20 @@ public class ItemDAO {
     }
 
     
+    @SuppressWarnings("unchecked")
+    public static List<Item> SelectPaidUserProducts(int cartId)
+    {
+        String state = "paid";
+        try
+        {
+            return HibernateUntil.getSessionFacoty().openSession()
+            .createQuery("FROM Item i WHERE i.cart.cid = :cid AND state = :state")
+            .setParameter("cid", cartId).setParameter("state",state).getResultList();
+        }
+        catch(Exception e)
+        {
+            e.printStackTrace();
+        }
+        return null;
+    }
 }
