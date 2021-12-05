@@ -3,7 +3,6 @@
 <%@page import="com.Controller.Config"%>
 <%@page import="com.cart.Cart"%>
 <%@page import="com.cart.CartDAO"%>
-<%@page import="com.user.User"%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 

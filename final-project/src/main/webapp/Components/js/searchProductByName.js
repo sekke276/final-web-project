@@ -9,11 +9,10 @@ function searchProductByName(param) {
     },
     success: function (data) {
       var row = document.getElementById("search-list");
-      row.innerHTML = data;
+      row.textContent = data;
     },
     error: function (_) {
       //Do Something to handle error
     },
   });
 }
-

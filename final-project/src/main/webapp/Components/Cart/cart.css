@@ -279,7 +279,7 @@
   z-index: 999;
 }
 
-.user-container {
+.user-cart-container {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;

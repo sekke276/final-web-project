@@ -21,7 +21,6 @@ import javax.crypto.spec.SecretKeySpec;
 import javax.servlet.http.HttpServletRequest;
 
 public class Config {
-
 	public static String vnp_PayUrl = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
 	public static String vnp_Returnurl = "http://localhost:8080/vnpay_return.jsp";
 	public static String vnp_TmnCode = "IMERRDFM";
