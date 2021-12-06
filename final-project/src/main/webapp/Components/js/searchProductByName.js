@@ -9,9 +9,9 @@ function searchProductByName(param) {
     },
     success: function (data) {
       var row = document.getElementById("search-list");
-      row.textContent = data;
+      row.innerHTML = data;
     },
-    error: function (_) {
+    error: function () {
       //Do Something to handle error
     },
   });
