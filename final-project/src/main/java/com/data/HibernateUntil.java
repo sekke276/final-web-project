@@ -58,13 +58,13 @@ public class HibernateUntil {
 	// settings.put(Environment.DIALECT, "org.hibernate.dialect.PostgreSQLDialect");
 	// settings.put(Environment.DRIVER, "org.postgresql.Driver");
 	// settings.put(Environment.URL,
-	// "jdbc:postgresql://ec2-3-212-168-103.compute-1.amazonaws.com:5432/dcqt8p482d77kd");
-	// settings.put(Environment.USER, "xnejbfarxkvsau");
+	// "jdbc:postgresql://ec2-54-89-105-122.compute-1.amazonaws.com:5432/d6k0f35nhokahq");
+	// settings.put(Environment.USER, "urwapcimxudohp");
 	// settings.put(Environment.PASS,
-	// "e6dc387234f6a9a93d912ad588191e58c7559d2b4d204599ee065075b85632ca");
+	// "760f8a18253c2db8e314d1af371a6bcdda02fc0e3691f987f2aa5de25dd52d94");
 	// settings.put(Environment.SHOW_SQL, "true");
 	// settings.put(Environment.CURRENT_SESSION_CONTEXT_CLASS, "thread");
-	// settings.put(Environment.HBM2DDL_AUTO,"update");
+	// settings.put(Environment.HBM2DDL_AUTO, "update");
 
 	// configuration.setProperties(settings);
 	// configuration.addAnnotatedClass(UserInfo.class);

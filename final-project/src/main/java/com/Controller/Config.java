@@ -1,9 +1,3 @@
-
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package com.Controller;
 
 import java.io.UnsupportedEncodingException;
@@ -22,7 +16,7 @@ import javax.servlet.http.HttpServletRequest;
 
 public class Config {
 	public static String vnp_PayUrl = "https://sandbox.vnpayment.vn/paymentv2/vpcpay.html";
-	public static String vnp_Returnurl = "http://tree-store.herokuapp.com/vnpay_return.jsp";
+	public static String vnp_Returnurl = "http://localhost:8080/vnpay_return.jsp";
 	public static String vnp_TmnCode = "IMERRDFM";
 	public static String vnp_HashSecret = "UULBIRLLQGRYGGJPRLZMLHJGUJOKYKYC";
 	public static String vnp_apiUrl = "https://sandbox.vnpayment.vn/merchant_webapi/merchant.html";

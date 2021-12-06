@@ -36,6 +36,7 @@ public class registerServlet extends HttpServlet {
 					System.out.println(UserDAO.emailExists(user.getEmail()));
 					UserDAO.addUser(user);
 					message = "login";
+
 				}
 			} else {
 				message = "Password does not match!!!";

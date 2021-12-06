@@ -56,7 +56,7 @@
 							<img src="icon_web/user.png" alt="User" class = "nav-icon">
 							<div class="user-control" id = "user-control">
 								<a href="personalInformation" class="user-control-content">Personal Information</a>
-								<a class="user-control-content">Purchase History</a>
+								<a href="ListPaymentHistory" class="user-control-content">Purchase History</a>
 							<c:if test = "${sessionScope.user.admin == 1}">
 								<a href="productManagement" class="user-control-content">Manage Product</a>
 							</c:if> 
