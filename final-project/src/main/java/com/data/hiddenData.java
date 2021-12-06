@@ -26,7 +26,7 @@ public class hiddenData {
 		admin5.setAdmin(1);
 
 		admin1.setPass("123456789aA");
-		admin2.setPass("123456789aA");
+		admin2.setPass("Anhvien1");
 		admin3.setPass("123456789aA");
 		admin4.setPass("123456789aA");
 		admin5.setPass("123456789aA");

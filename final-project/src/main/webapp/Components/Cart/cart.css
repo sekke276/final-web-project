@@ -59,12 +59,12 @@
   display: flex;
   flex-flow: row nowrap;
   width: 100%;
-
   border-bottom: 1px solid gray;
 }
+
 .item-detail {
   padding: 15px;
-  width: 70%;
+  width: 50%;
   display: flex;
   vertical-align: top;
 }
@@ -76,6 +76,19 @@
   border: 1px solid gray;
 }
 
+.day-paid-container {
+  width: 30%;
+  display: flex;
+  align-items: center;
+}
+
+.day-paid-title {
+  padding: 15px;
+  width: 30%;
+  display: flex;
+  vertical-align: top;
+}
+
 .item-img {
   width: inherit;
   height: inherit;
@@ -84,7 +97,7 @@
 }
 
 .item-description {
-  margin: 0px 10px;
+  margin: 0 10px;
   display: flex;
   flex-flow: column nowrap;
   justify-content: space-around;
@@ -119,6 +132,7 @@
   width: 15%;
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 
 #Quality {
