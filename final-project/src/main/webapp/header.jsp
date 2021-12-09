@@ -146,3 +146,79 @@
         </div>
     </div>
 </div>
+<c:if test = "${sessionScope.user != null}">
+<script type="text/javascript">
+	(function(d, m){
+		var kommunicateSettings = 
+			{"appId":"1f09ac23e94291f2167f08c4e8158ca8d","popupWidget":true,"automaticChatOpenOnNavigation":true,
+			"onInit": function () {
+				var events = {
+					'onMessageReceived': function (resp)
+					{
+						var checkMessage = resp.message.message?.slice(0,7);
+						if(checkMessage === "Alright")
+						{
+							var amount = resp.message.message.replace(/[^0-9]/g, '');
+							var plantName = resp.message.message.split(' ')
+							.slice(0,-6).slice(2).join(" ").replace(/"/g,'');
+							$.ajax(
+								{
+								url : "botServlet",
+								type: "POST",
+								data:{
+									action: "addToCart",
+									plantName: plantName,
+									amount: amount
+								},
+								success: function(data){}
+								}
+							)
+						}
+
+					//called when a new message is received
+					},
+					'onRichMessageButtonClick': function (resp)
+					{
+						if(resp.eventLabel === "Bonsai" || resp.eventLabel === "Air Purifying Plant"
+						|| resp.eventLabel === "Climber" || resp.eventLabel === "Flowering")
+						{
+							$.ajax({
+								url : "botServlet",
+								type: "POST",
+								data:{
+									action: "filter",
+									type: resp.eventLabel
+								},
+								success: function(data)
+								{
+									var link = "https://final-web-pro.herokuapp.com/filter" + "?" + data
+									console.log(data);
+									window.location =  link;
+								}
+								})
+						}
+						else if (resp.eventLabel === "Empty my cart")
+						{
+							$.ajax({
+								url : "botServlet",
+								type: "POST",
+								data:{
+									action: "Empty my cart"
+								},
+								success: function(data){}
+								})
+						}
+					}
+				};
+				Kommunicate.subscribeToEvents(events);
+			},
+		};
+		var s = document.createElement("script"); s.type = "text/javascript"; s.async = true;
+		s.src = "https://widget.kommunicate.io/v2/kommunicate.app";
+		var h = document.getElementsByTagName("head")[0]; h.appendChild(s);
+		window.kommunicate = m; m._globals = kommunicateSettings;
+		
+	})(document, window.kommunicate || {});
+/* NOTE : Use web server to view HTML files as real-time update will not work if you directly open the HTML file in the browser. */
+</script>
+</c:if>

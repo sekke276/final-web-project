@@ -140,6 +140,7 @@
 			</div>
 		</div>
 	</body>
+	
 	<script>
 		 // hide payment
 		$("#payment-overlay").toggle();

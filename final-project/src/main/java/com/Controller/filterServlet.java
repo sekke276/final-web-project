@@ -32,7 +32,7 @@ public class filterServlet extends HttpServlet {
 
             if(!type.equals("All"))
             {
-                queryString += " t.kind = '" + type +"'";
+                queryString += " t.kind Like '" + type +"'";
             }
             if(!type.equals("All") && !brand.equals("All"))
             {
